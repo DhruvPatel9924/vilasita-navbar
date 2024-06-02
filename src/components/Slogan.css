@@ -1,0 +1,92 @@
+.slogan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+  }
+  
+  .slogan {
+    opacity: 0;
+    transform: scale(0.);
+    animation: fadeInAndScale 1.5s ease forwards; 
+  }
+  
+  @keyframes fadeInAndScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(2.1);
+    }
+  }
+  
+  .slogan-container.hidden {
+    pointer-events: none;
+  }
+  
+  .slogan-container.visible {
+   
+  }
+  
+
+
+
+
+/* 
+   
+
+   .slogan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+  }
+  
+  .slogan {
+    opacity: 0;
+    transform: scale(0.1); 
+    animation: fadeInAndScale 1.8s ease forwards;
+  }
+  
+  @keyframes fadeInAndScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    50% {
+
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    80% {
+      opacity: 1;
+      transform: scale(2);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) scale(4);
+    }
+  }
+  
+  .slogan-container.hidden {
+    pointer-events: none;
+  }
+  
+  .slogan-container.visible {
+   
+  }
+    */
